@@ -27,7 +27,7 @@ Start date: **2026-03-04**
 ## Phase 4 (2026-03-28 onward): Governance Automation
 
 - Run weekly consistency check:
-  - `bash scripts/check_catalog_consistency.sh /Users/zhangbin/GitHub REPO_CATALOG.md`
+  - `bash scripts/check_catalog_consistency.sh <workspace-root> REPO_CATALOG.md`
 - Any newly cloned folder must be categorized within 24 hours.
 - Any repo removed/renamed must be reflected in catalog on the same day.
 

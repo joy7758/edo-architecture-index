@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-workspace="${1:-/Users/zhangbin/GitHub}"
+workspace="${1:-/GitHub}"
 
 if [[ ! -d "${workspace}" ]]; then
   echo "ERROR: workspace not found: ${workspace}" >&2

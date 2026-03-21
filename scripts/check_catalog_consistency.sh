@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-workspace="${1:-/Users/zhangbin/GitHub}"
+workspace="${1:-/GitHub}"
 catalog="${2:-REPO_CATALOG.md}"
 
 if [[ ! -d "${workspace}" ]]; then

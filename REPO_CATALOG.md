@@ -1,6 +1,6 @@
 # Repository Catalog (Workspace Snapshot)
 
-Workspace: `/Users/zhangbin/GitHub`  
+Workspace: `<workspace-root>`  
 Snapshot date: **2026-03-04**
 
 ## Category Legend
