@@ -1,7 +1,11 @@
 # EDO Workspace Index
 
-This repository is the single entry point for the local workspace at
-`/Users/zhangbin/GitHub`.
+> Legacy lineage repository.
+> Historical context for the earlier DPP / sovereignty / governance formation phase.
+> Not part of the current canonical five-layer verifiable autonomous systems stack.
+> Current canonical entry: [joy7758](https://github.com/joy7758) profile and [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture).
+
+This repository preserves an earlier workspace navigation model for a broader EDO-oriented repo constellation.
 
 Snapshot date: **2026-03-04**
 
@@ -40,8 +44,12 @@ Goal: replace a flat, noisy folder list with a stable navigation model:
 
 ```bash
 # 1) Generate live workspace inventory table
-bash scripts/workspace_inventory.sh /Users/zhangbin/GitHub
+bash scripts/workspace_inventory.sh <workspace-root>
 
 # 2) Verify REPO_CATALOG.md covers all top-level folders
-bash scripts/check_catalog_consistency.sh /Users/zhangbin/GitHub REPO_CATALOG.md
+bash scripts/check_catalog_consistency.sh <workspace-root> REPO_CATALOG.md
 ```
+
+## Current relationship to the main line
+
+This repository is a terminology precursor and earlier workspace index. It documents a previous navigation model, but the current canonical public surface now starts from the `joy7758` profile and `digital-biosphere-architecture`.
