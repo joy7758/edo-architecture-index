@@ -1,24 +1,51 @@
 <!-- language-switch:start -->
-<p>
-  <a href="./README.md">
-    <img src="https://img.shields.io/badge/%E8%8B%B1%E6%96%87-%E5%88%87%E6%8D%A2-0f172a?style=for-the-badge" alt="英文">
-  </a>
-  <a href="./README.zh-CN.md">
-    <img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-1f883d?style=for-the-badge" alt="中文">
-  </a>
-</p>
+[English](./README.md) | [中文](./README.zh-CN.md)
 <!-- language-switch:end -->
-# edo-architecture-index
 
-更早期工作区导航模型的历史索引仓库。
+# EDO 工作空间索引
 
-当前规范公开入口：[joy7758](https://github.com/joy7758) 与 [digital-biosphere-architecture](https://github.com/joy7758/digital-biosphere-architecture)。
+该仓库是本地工作区的单一入口点
+`/Users/zhangbin/GitHub`。
 
-## 快速入口
+快照日期： **2026-03-04**
 
-- [数字生物圈架构](https://github.com/joy7758/digital-biosphere-architecture)
+目标：用稳定的导航模型替换扁平、嘈杂的文件夹列表：
+`Governance -> Protocols -> Applications -> Integrations -> Research -> Ops`。
 
-## 语言说明
+## 快速进入
 
-- 默认英文页：[README.md](./README.md)
-- 本页只保留中文介绍，避免中英文混排。
+- 如果你首先想要生态系统治理：
+  - `RedRock-Constitution` -> `god-spear` -> `safety-valve-spec` -> `aro-audit`
+- 如果您首先想要协议和标准：
+  - `agent-object-protocol` -> `execution-integrity-core` -> `fdo-kernel-mvk` -> `pFDO-Specification`
+- 如果您首先想要垂直业务应用程序：
+  - `MCP-Legal-China` (LawTech) -> `redrock-opendpp-core` (欧盟 DPP)
+
+## 类别概览
+
+|类别 |计数 |核心目的|
+| --- | ---: | --- |
+|治理和控制平面| 6 |治理规则、审计链、政策门、成本治理 |
+|协议和标准 | 9 |互操作性合同、内核、正式规范 |
+|领域应用 | 2 |面向业务的垂直实施|
+|框架集成| 6 |与上游代理框架的分叉/集成 |
+|研究与实验| 2 |可重复的研究和规模验证|
+|运营与孵化| 2 |本地部署脚本和早期占位符 |
+
+## 规范文档
+
+- 完整目录：[REPO_CATALOG.md](REPO_CATALOG.md)
+- 架构规则：[ARCHITECTURE.md](ARCHITECTURE.md)
+- 执行路线图：[ROADMAP.md](ROADMAP.md)
+- 工作区清单脚本：[scripts/workspace_inventory.sh](scripts/workspace_inventory.sh)
+- 目录一致性检查：[scripts/check_catalog_consistency.sh](scripts/check_catalog_consistency.sh)
+
+## 维护命令
+
+```bash
+# 1) Generate live workspace inventory table
+bash scripts/workspace_inventory.sh /Users/zhangbin/GitHub
+
+# 2) Verify REPO_CATALOG.md covers all top-level folders
+bash scripts/check_catalog_consistency.sh /Users/zhangbin/GitHub REPO_CATALOG.md
+```
